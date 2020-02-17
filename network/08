@@ -1,0 +1,4 @@
+#!/bin/bash
+
+nslookup slash16.org | grep Address | tail -1 | awk '{print $2}' | xargs whois | grep -v '^#' | grep -v '^$'
+# at first we use nslookup to find ip adress of slash16.org, the we use whois utility to find the provider

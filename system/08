@@ -1,0 +1,3 @@
+find in /etc/ssh/sshd_config line AuthorizedKeysFile 
+cat /etc/ssh/sshd_config | grep AuthorizedKeysFile
+.ssh/authorized_keys .ssh/aurhorized_keys2
